@@ -19,7 +19,8 @@ namespace OrderManagementClient.Implementations
             { "Add","/api/v{0}/Basket/{1}/Add"},
             { "Remove","/api/v{0}/Basket/{1}/Remove/{2}"},
             { "SetQuantity","/api/v{0}/Basket/{1}/SetQuantity/{2}"},
-            { "Complete","/api/v{0}/Basket/{1}/Complete"}
+            { "Complete","/api/v{0}/Basket/{1}/Complete"},
+            { "ClearOut","/api/v{0}/Basket/{1}/ClearOut"},
         };
 
         public string GetAPIVersion()

@@ -182,5 +182,26 @@ namespace OrderManagementClient
                 throw new ArgumentException("OrderId must be a positive number.");
             }
         }
+
+        public void ClearOut(int orderId)
+        {
+            if (orderId > 0)
+            {
+                var response = _restClient.PostAsJsonAsync(_configuration.GetQueryString("ClearOut", _configuration.GetAPIVersion(), orderId.ToString()), orderId).Result;
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    return;
+                }
+                else
+                {
+                    throw new ArgumentException(response.ReasonPhrase);
+                }
+            }
+            else
+            {
+                throw new ArgumentException("OrderId must be a positive number.");
+            }
+        }
     }
 }
