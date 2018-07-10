@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Igor Mishur</Authors>
+    <Company>Igor Mishur</Company>
+    <RepositoryType>GIT</RepositoryType>
+    <Copyright>LGPL 3.0</Copyright>
+    <Description>Client library that makes use of the Basket API endpoints created in OrderManagement. The purpose of this code to provide authors of client applications a simple framework to use in their applications.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/igrm/OrderManagementClient/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/igrm/OrderManagementClient</PackageProjectUrl>
+    <NeutralLanguage></NeutralLanguage>
+    <RepositoryUrl>https://github.com/igrm/OrderManagementClient.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
